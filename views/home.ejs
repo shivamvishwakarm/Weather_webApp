@@ -1,0 +1,74 @@
+<%- include('partials/header') %>
+
+    <div class="container">
+        <form class="d-flex" action="/" method="post">
+            <input type="text" name="cityName" placeholder="Search the city">
+        </form>
+    </div>
+    <div class="container no-flex">
+
+        <div class="weather-info p-50 ">
+            <div class="first-heading m-50 m-y-20">
+                <h1>
+                    <%= weatherTemp +"°C" %>
+                </h1>
+            </div>
+            <div class="second-heading m-50 m-y-20 ">
+                <h2>
+                    <%= cityName %>
+                </h2>
+                <p>
+                    <%= clock + " - " + date %>
+                </p>
+            </div>
+            <div class="weather-img m-50 m-y-20  ">
+                <img src="<%= imgurl %> ">
+            </div>
+        </div>
+
+        <div class="weather-detail">
+            <div class="first-heading">
+                <h1>Weather Detail</h1>
+            </div>
+
+            <div class="detail">
+                <table>
+                    <tr>
+                        <td>Description</td>
+                        <td>
+                            <%= weatherDescription%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Feels Like</td>
+                        <td>
+                            <%= feelsLike + "°C"%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Humidity</td>
+                        <td>
+                            <%= humidity + "%" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cloudy</td>
+                        <td>
+                            <%= cloudy + "%" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>wind</td>
+                        <td>
+                            <%= windSpeed +"km/h" %>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+    </html>

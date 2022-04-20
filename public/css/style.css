@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+body {
+    background-image: url("../img/weather.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* navbar start */
+
+.navbar-brand img {
+    width: 20%;
+}
+
+.navigation {
+    /* border-bottom: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    height: 65px;
+    padding-top: 20px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navitem {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 5px 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 900;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
+/* navbar end */
+
+
+/*  Search input button  */
+
+form input[type=text] {
+    border: 2px solid black;
+    padding: 15px;
+    width: 80%;
+    text-align: center;
+    margin: 100px;
+    border-radius: 10px;
+    font-size: 30px;
+    background: transparent;
+    color: rgb(248, 187, 74);
+    margin-top: 5px;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.weather-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0 60px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+table td {
+    padding: 10px 60px;
+}
+
+
+/* utlity classes */
+
+.center {
+    width: 80%;
+    margin: auto;
+}
+
+.flex-dir-col {
+    flex-direction: column;
+}
+
+.p-50 {
+    padding: 50px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.no-flex {
+    display: block;
+}
+
+.m-y-20 {
+    margin: 20px 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+@media screen and (max-width: 850px) {
+    .weather-info {
+        flex-direction: column;
+        justify-content: center;
+    }
+    form input[type=text] {
+        margin: 15px;
+    }
+}
